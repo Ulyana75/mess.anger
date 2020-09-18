@@ -1,21 +1,9 @@
 import json
-import urllib
-import requests
-import bmemcached
-import os
 import time
 
 from flask import Flask, request, send_file
 
 app = Flask(__name__)
-# servers = os.environ.get('MEMCACHIER_SERVERS', '').split(',')
-# user = os.environ.get('MEMCACHIER_USERNAME', '')
-# passw = os.environ.get('MEMCACHIER_PASSWORD', '')
-#
-# mc = bmemcached.Client(servers, username=user, password=passw)
-
-response = requests.get('https://docs.google.com/document/d/1gzgWFf69rWXmLx7g1bVwVugWQOu89VohN8CVcM6446I/edit')
-print(response.content)
 
 p = [29**i for i in range(100)]
 
